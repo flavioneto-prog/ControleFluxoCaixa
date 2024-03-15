@@ -1,0 +1,14 @@
+﻿global using Asp.Versioning.ApiExplorer;
+global using Asp.Versioning;
+global using ConsolidadoDiario.API.Configurations;
+global using ConsolidadoDiario.API.Controllers.Base;
+global using ConsolidadoDiario.API.Swagger;
+global using ConsolidadoDiario.Application.Interfaces;
+global using Microsoft.AspNetCore.Mvc.ApiExplorer;
+global using Microsoft.AspNetCore.Mvc.ModelBinding;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Options;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.Annotations;
+global using Swashbuckle.AspNetCore.SwaggerGen;
+global using System.Text.Json;

@@ -1,0 +1,11 @@
+﻿global using AutoMapper;
+global using ControleFluxoCaixa.Domain.Entities;
+global using ControleFluxoCaixa.Domain.Interfaces;
+global using FluxoCaixa.Application.Interfaces;
+global using FluxoCaixa.Application.Models.Enums;
+global using FluxoCaixa.Application.Models.Requests;
+global using FluxoCaixa.Application.Models.Responses;
+global using FluxoCaixa.Application.Services;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using System.ComponentModel.DataAnnotations;

@@ -1,0 +1,16 @@
+﻿global using Asp.Versioning.ApiExplorer;
+global using Asp.Versioning;
+global using ControleFluxoCaixa.Infrastructure.Extensions;
+global using FluxoCaixa.API.Configurations;
+global using FluxoCaixa.API.Controllers.Base;
+global using FluxoCaixa.API.Swagger;
+global using FluxoCaixa.Application.Extensions;
+global using FluxoCaixa.Application.Interfaces;
+global using FluxoCaixa.Application.Models.Requests;
+global using Microsoft.AspNetCore.Mvc.ApiExplorer;
+global using Microsoft.AspNetCore.Mvc.ModelBinding;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Options;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.SwaggerGen;
+global using System.Text.Json;

@@ -1,0 +1,12 @@
+global using FluxoCaixa.API.Controllers.V1;
+global using FluxoCaixa.API.Tests.Fakers;
+global using FluxoCaixa.Application.Interfaces;
+global using FluxoCaixa.Application.Models.Enums;
+global using FluxoCaixa.Application.Models.Requests;
+global using FluxoCaixa.Application.Models.Responses;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+global using Microsoft.Extensions.Logging;
+global using Moq;
+global using NSubstitute;
+global using Xunit;
