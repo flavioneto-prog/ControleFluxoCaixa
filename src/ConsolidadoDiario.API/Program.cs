@@ -1,7 +1,5 @@
 using ConsolidadoDiario.Application.Extensions;
-using ControleFluxoCaixa.Infrastructure.Context;
 using ControleFluxoCaixa.Infrastructure.Extensions;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,9 +41,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-await using var scope = app.Services.CreateAsyncScope();
-await using var db = scope.ServiceProvider.GetService<ControleFluxoCaixaDbContext>();
-await db.Database.EnsureCreatedAsync();
 
 app.Run();

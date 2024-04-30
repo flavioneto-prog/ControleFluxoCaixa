@@ -1,6 +1,3 @@
-using ControleFluxoCaixa.Infrastructure.Context;
-using Microsoft.EntityFrameworkCore;
-
 var builder = WebApplication.CreateBuilder(args);
 var assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
@@ -37,9 +34,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-await using var scope = app.Services.CreateAsyncScope();
-await using var db = scope.ServiceProvider.GetService<ControleFluxoCaixaDbContext>();
-await db.Database.EnsureCreatedAsync();
 
 app.Run();
