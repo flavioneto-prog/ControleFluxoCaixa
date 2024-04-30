@@ -28,7 +28,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
             }
         }
 
-        return await query.AsNoTracking().FirstOrDefaultAsync(expression);
+        return await query.FirstOrDefaultAsync(expression);
     }
 
     public async Task<IList<T>> GetAllAsync(
@@ -56,7 +56,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
             query = orderBy(query);
         }
 
-        return await query.AsNoTracking().ToListAsync();
+        return await query.ToListAsync();
     }
 
     public async Task<T> InsertAsync(T entity)
