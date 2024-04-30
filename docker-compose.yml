@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  consolidadodiario.api:
+    image: ${DOCKER_REGISTRY-}consolidadodiarioapi
+    container_name: consolidado_diario_api
+    build:
+      context: .
+      dockerfile: src/ConsolidadoDiario.API/Dockerfile
+    depends_on: [sqlserver]
+  fluxocaixa.api:
+    image: ${DOCKER_REGISTRY-}fluxocaixaapi
+    container_name: fluxo_caixa_api
+    build:
+      context: .
+      dockerfile: src/FluxoCaixa.API/Dockerfile
+    depends_on: [sqlserver]
+  sqlserver:
+     image: mcr.microsoft.com/mssql/server:latest  
+     container_name: sql_server
+     hostname: sqlserver

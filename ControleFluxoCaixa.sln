@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsolidadoDiario.API", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsolidadoDiario.Application", "src\ConsolidadoDiario.Application\ConsolidadoDiario.Application.csproj", "{07BFBE19-DF65-4D53-B9D4-D8A6B9B19028}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{166E7817-9DF7-4F18-8F29-5AC08BBB13FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{07BFBE19-DF65-4D53-B9D4-D8A6B9B19028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07BFBE19-DF65-4D53-B9D4-D8A6B9B19028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07BFBE19-DF65-4D53-B9D4-D8A6B9B19028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166E7817-9DF7-4F18-8F29-5AC08BBB13FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166E7817-9DF7-4F18-8F29-5AC08BBB13FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166E7817-9DF7-4F18-8F29-5AC08BBB13FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166E7817-9DF7-4F18-8F29-5AC08BBB13FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
