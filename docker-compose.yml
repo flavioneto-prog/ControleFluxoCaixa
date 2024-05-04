@@ -1,5 +1,9 @@
 version: '3.4'
 
+volumes:
+  dadosDb:
+    name: dadosDbVolume
+
 services:
   consolidadodiario.api:
     image: ${DOCKER_REGISTRY-}consolidadodiarioapi
@@ -16,6 +20,8 @@ services:
       dockerfile: src/FluxoCaixa.API/Dockerfile
     depends_on: [sqlserver]
   sqlserver:
-     image: mcr.microsoft.com/mssql/server:latest  
+     image: mcr.microsoft.com/mssql/server:latest
      container_name: sql_server
      hostname: sqlserver
+     volumes:
+        - dadosDb:/var/opt/mssql
